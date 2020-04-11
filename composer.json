@@ -1,0 +1,49 @@
+{
+    "name": "brotkrueml/schema-virtuallocation",
+    "type": "typo3-cms-extension",
+    "description": "Add-on to the TYPO3 schema extension, providing VirtualLocation",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Chris Müller",
+            "role": "Developer"
+        }
+    ],
+    "keywords": [
+        "TYPO3 CMS",
+        "TYPO3 extension",
+        "JSON-LD",
+        "Structured data",
+        "SEO",
+        "schema.org"
+    ],
+    "require": {
+        "php": "^7.2",
+        "brotkrueml/schema": "1.7.x-dev",
+        "typo3/cms-core": "^9.5 || ^10"
+    },
+    "autoload": {
+        "psr-4": {
+            "Brotkrueml\\SchemaVirtualLocation\\": "Classes/"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "vendor-dir": ".Build/vendor",
+        "bin-dir": ".Build/bin"
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "schema_virtuallocation",
+            "app-dir": ".Build",
+            "web-dir": ".Build/web"
+        }
+    },
+    "scripts": {
+        "fix-cs": ".Build/bin/php-cs-fixer fix",
+        "zip": "grep -Po \"(?<='version' => ')([0-9]+\\.[0-9]+\\.[0-9]+)\" ext_emconf.php | xargs -I {version} sh -c 'mkdir -p ../zip; git archive -v -o \"../zip/${PWD##*/}_{version}.zip\" v{version}'"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.16"
+    }
+}
