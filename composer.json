@@ -1,7 +1,7 @@
 {
     "name": "brotkrueml/schema-virtuallocation",
     "type": "typo3-cms-extension",
-    "description": "Add-on to the TYPO3 schema extension, providing VirtualLocation",
+    "description": "Add-on to the TYPO3 schema extension, providing pending type VirtualLocation",
     "license": "GPL-2.0-or-later",
     "authors": [
         {
@@ -19,8 +19,8 @@
     ],
     "require": {
         "php": "^7.2",
-        "brotkrueml/schema": "1.7.x-dev",
-        "typo3/cms-core": "^9.5 || ^10"
+        "typo3/cms-core": "^9.5 || ^10.4",
+        "brotkrueml/schema": "^1.7"
     },
     "autoload": {
         "psr-4": {
