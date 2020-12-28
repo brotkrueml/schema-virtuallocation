@@ -12,8 +12,8 @@ with own type models and view helpers.
 
 ## Requirements
 
-The extension works with TYPO3 v9 LTS and TYPO3 v10 LTS. It requires at least
-the schema extension version 1.7.
+The extension works with TYPO3 v9 LTS, TYPO3 v10 LTS and TYPO3 v11. It requires
+at least the schema extension version 1.7.
 
 ## Installation
 

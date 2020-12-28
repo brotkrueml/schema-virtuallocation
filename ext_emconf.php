@@ -9,11 +9,11 @@ $EM_CONF[$_EXTKEY] = [
     'clearCacheOnLoad' => true,
     'author' => 'Chris Müller',
     'author_email' => 'typo3@krue.ml',
-    'version' => '1.0.0',
+    'version' => '1.1.0',
     'constraints' => [
         'depends' => [
-            'typo3' => '9.5.0-10.4.99',
-            'schema' => '1.7.0-'
+            'typo3' => '9.5.0-11.5.99',
+            'schema' => '1.7.0-0.0.0'
         ],
     ],
     'autoload' => [
