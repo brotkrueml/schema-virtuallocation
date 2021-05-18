@@ -37,6 +37,9 @@
         "bin-dir": ".Build/bin"
     },
     "extra": {
+        "branch-alias": {
+            "dev-master": "1.2.x-dev"
+        },
         "typo3/cms": {
             "extension-key": "schema_virtuallocation",
             "app-dir": ".Build",
