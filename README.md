@@ -7,13 +7,14 @@ as location to the Event type. As it is a pending type by now it is not provided
 by the schema extension. When this type is taken into the core vocabulary this
 extension is obsolete.
 
-Also this extension serves as a blueprint for extending the schema extension
+Also, this extension serves as a blueprint for extending the schema extension
 with own type models and view helpers.
 
 ## Requirements
 
-The extension works with TYPO3 v9 LTS, TYPO3 v10 LTS and TYPO3 v11. It requires
-at least the schema extension version 1.7 or version 2.0.
+The extension in the latest version supports TYPO3 v10 LTS, TYPO3 v11 LTS and
+TYPO3 v12. Use version 1.2 for compatibility with TYPO3 v9 LTS. It requires at
+least the schema extension in version 1.7.
 
 ## Installation
 
