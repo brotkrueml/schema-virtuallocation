@@ -41,7 +41,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "1.3.x-dev"
+            "dev-main": "1.3.x-dev"
         },
         "typo3/cms": {
             "extension-key": "schema_virtuallocation",
