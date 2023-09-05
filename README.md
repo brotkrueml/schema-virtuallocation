@@ -63,7 +63,7 @@ For more information have a look into the
 
 | Latest release | TYPO3       | PHP   | EXT:schema | Updates will contain             |
 |----------------|-------------|-------|------------|----------------------------------|
-| 2.x            | 11.5 - 12.4 | ≥ 8.1 | 1.x - 2.x  | Features, security and bug fixes |
+| 2.x            | 11.5 - 12.4 | ≥ 8.1 | 3.x        | Features, security and bug fixes |
 | 1.x            | 10.4 - 12.4 | ≥ 7.2 | 1.x - 2.x  | Security and bug fixes           |
 
 [Changelog](https://github.com/brotkrueml/schema-virtuallocation/blob/main/CHANGELOG.md) |

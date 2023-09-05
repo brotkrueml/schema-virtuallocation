@@ -11,11 +11,13 @@ declare(strict_types=1);
 
 namespace Brotkrueml\SchemaVirtualLocation\Domain\Schema\Type;
 
+use Brotkrueml\Schema\Attributes\Type;
 use Brotkrueml\Schema\Core\Model\AbstractType;
 
+#[Type('VirtualLocation')]
 final class VirtualLocation extends AbstractType
 {
-    protected static $propertyNames = [
+    protected static array $propertyNames = [
         'additionalType',
         'alternateName',
         'description',

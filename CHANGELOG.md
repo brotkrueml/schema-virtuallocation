@@ -7,9 +7,13 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+### Added
+- Compatibility with schema version 3
+
 ### Removed
 - Compatibility with TYPO3 v10
 - Compatibility with PHP < 8.1
+- Compatibility with schema version 1 and 2
 
 ## [1.3.0] - 2022-10-06
 
