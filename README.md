@@ -57,4 +57,4 @@ Both cases produce the following JSON-LD ouput:
     }
 
 For more information have a look into the
-[schema documentation](https://docs.typo3.org/p/brotkrueml/schema/master/en-us/).
+[schema documentation](https://docs.typo3.org/p/brotkrueml/schema/main/en-us/).
