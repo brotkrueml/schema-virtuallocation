@@ -1,14 +1,8 @@
 {
     "name": "brotkrueml/schema-virtuallocation",
-    "type": "typo3-cms-extension",
     "description": "Add-on to the TYPO3 schema extension, providing pending type VirtualLocation",
     "license": "GPL-2.0-or-later",
-    "authors": [
-        {
-            "name": "Chris Müller",
-            "role": "Developer"
-        }
-    ],
+    "type": "typo3-cms-extension",
     "keywords": [
         "TYPO3 CMS",
         "TYPO3 extension",
@@ -17,13 +11,20 @@
         "SEO",
         "schema.org"
     ],
+    "authors": [
+        {
+            "name": "Chris Müller",
+            "role": "Developer"
+        }
+    ],
     "require": {
         "php": ">=8.1",
-        "typo3/cms-core": "^11.5.19 || ^12.4",
-        "brotkrueml/schema": "^1.7 || ^2.0"
+        "brotkrueml/schema": "^1.7 || ^2.0",
+        "typo3/cms-core": "^11.5.19 || ^12.4"
     },
     "require-dev": {
-        "brotkrueml/coding-standards": "~4.0.0"
+        "brotkrueml/coding-standards": "~4.0.0",
+        "ergebnis/composer-normalize": "~2.36.0"
     },
     "autoload": {
         "psr-4": {
@@ -31,21 +32,22 @@
         }
     },
     "config": {
-        "sort-packages": true,
-        "vendor-dir": ".Build/vendor",
-        "bin-dir": ".Build/bin",
         "allow-plugins": {
             "typo3/cms-composer-installers": true,
-            "typo3/class-alias-loader": true
-        }
+            "typo3/class-alias-loader": true,
+            "ergebnis/composer-normalize": true
+        },
+        "bin-dir": ".Build/bin",
+        "sort-packages": true,
+        "vendor-dir": ".Build/vendor"
     },
     "extra": {
         "branch-alias": {
             "dev-main": "2.0.x-dev"
         },
         "typo3/cms": {
-            "extension-key": "schema_virtuallocation",
             "app-dir": ".Build",
+            "extension-key": "schema_virtuallocation",
             "web-dir": ".Build/web"
         }
     },
