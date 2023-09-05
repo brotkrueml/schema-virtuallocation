@@ -59,6 +59,12 @@ Both cases produce the following JSON-LD ouput:
 For more information have a look into the
 [schema documentation](https://docs.typo3.org/p/brotkrueml/schema/main/en-us/).
 
+## Versions and support
+
+| Latest release | TYPO3       | PHP   | EXT:schema | Updates will contain             |
+|----------------|-------------|-------|------------|----------------------------------|
+| 2.x            | 11.5 - 12.4 | ≥ 8.1 | 1.x - 2.x  | Features, security and bug fixes |
+| 1.x            | 10.4 - 12.4 | ≥ 7.2 | 1.x - 2.x  | Security and bug fixes           |
 
 [Changelog](https://github.com/brotkrueml/schema-virtuallocation/blob/main/CHANGELOG.md) |
 [TYPO3 Extension Repository](https://extensions.typo3.org/extension/schema_virtuallocation)

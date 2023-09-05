@@ -7,6 +7,10 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+### Removed
+- Compatibility with TYPO3 v10
+- Compatibility with PHP < 8.1
+
 ## [1.3.0] - 2022-10-06
 
 ### Added
