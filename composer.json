@@ -23,8 +23,8 @@
         "typo3/cms-core": "^11.5.19 || ^12.4"
     },
     "require-dev": {
-        "brotkrueml/coding-standards": "~4.0.0",
-        "ergebnis/composer-normalize": "~2.36.0"
+        "brotkrueml/coding-standards": "~5.0.0",
+        "ergebnis/composer-normalize": "~2.39.0"
     },
     "autoload": {
         "psr-4": {
@@ -33,9 +33,9 @@
     },
     "config": {
         "allow-plugins": {
-            "typo3/cms-composer-installers": true,
+            "ergebnis/composer-normalize": true,
             "typo3/class-alias-loader": true,
-            "ergebnis/composer-normalize": true
+            "typo3/cms-composer-installers": true
         },
         "bin-dir": ".Build/bin",
         "sort-packages": true,
