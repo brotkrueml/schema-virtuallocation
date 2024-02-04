@@ -29,17 +29,39 @@ composer req brotkrueml/schema-virtuallocation
 ### Using the API
 
 ```php
-$location = \Brotkrueml\Schema\Type\TypeFactory::createType('VirtualLocation');
-$location->setProperty('url', 'https://example.org/join/12345');
+<?php
 
-$event = \Brotkrueml\Schema\Type\TypeFactory::createType('Event');
-$event
-    ->setProperty('name' 'A virtual event')
-    ->setProperty('location', $location)
-;
+declare(strict_types=1);
+
+namespace MyVendor\MyExtension\Controller;
+
+use Brotkrueml\Schema\Type\TypeFactory;
+
+final class MyController
+{
+    public function __construct(
+        private readonly TypeFactory $typeFactory,
+    ) {}
+
+    public function doSomething(): void
+    {
+        // ...
+
+        $location = $this->typeFactory->create('VirtualLocation');
+        $location->setProperty('url', 'https://example.org/join/12345');
+
+        $event = $this->typeFactory->create('Event');
+        $event
+            ->setProperty('name' 'A virtual event')
+            ->setProperty('location', $location)
+        ;
+
+        // ...
+    }
+}
 ```
 
-### Using the View Helpers
+### Using the view helper
 
 ```xml
 <schema:type.event name="A virtual event">
