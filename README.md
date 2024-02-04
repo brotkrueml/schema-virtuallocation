@@ -20,41 +20,49 @@ LTS.
 
 With Composer:
 
-    composer req brotkrueml/schema-virtuallocation
+```bash
+composer req brotkrueml/schema-virtuallocation
+```
 
 ## Usage
 
 ### Using the API
 
-    $location = \Brotkrueml\Schema\Type\TypeFactory::createType('VirtualLocation');
-    $location->setProperty('url', 'https://example.org/join/12345');
+```php
+$location = \Brotkrueml\Schema\Type\TypeFactory::createType('VirtualLocation');
+$location->setProperty('url', 'https://example.org/join/12345');
 
-    $event = \Brotkrueml\Schema\Type\TypeFactory::createType('Event');
-    $event
-        ->setProperty('name' 'A virtual event')
-        ->setProperty('location', $location)
-    ;
+$event = \Brotkrueml\Schema\Type\TypeFactory::createType('Event');
+$event
+    ->setProperty('name' 'A virtual event')
+    ->setProperty('location', $location)
+;
+```
 
 ### Using the View Helpers
 
-    <schema:type.event name="A virtual event">
-        <schema:type.virtualLocation
-            -as="location"
-            url="https://example.org/join/12345"
-        />
-    </schema:type.event>
+```xml
+<schema:type.event name="A virtual event">
+    <schema:type.virtualLocation
+        -as="location"
+        url="https://example.org/join/12345"
+    />
+</schema:type.event>
+```
 
 Both cases produce the following JSON-LD ouput:
 
-    {
-        "@context": "http://schema.org",
-        "@type": "Event",
-        "location": {
-            "@type": "VirtualLocation",
-            "url": "https://example.org/join/12345"
-        },
-        "name": "A virtual event"
-    }
+```json
+{
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "location": {
+        "@type": "VirtualLocation",
+        "url": "https://example.org/join/12345"
+    },
+    "name": "A virtual event"
+}
+```
 
 For more information have a look into the
 [schema documentation](https://docs.typo3.org/p/brotkrueml/schema/main/en-us/).
