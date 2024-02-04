@@ -12,13 +12,13 @@ with own type models and view helpers.
 
 ## Requirements
 
-The extension in the latest version supports TYPO3 v10 LTS, TYPO3 v11 LTS and
-TYPO3 v12. Use version 1.2 for compatibility with TYPO3 v9 LTS. It requires at
-least the schema extension in version 1.7.
+The extension in the latest version supports TYPO3 v11 LTS, TYPO3 v12 LTS and
+TYPO3 v13. Use older version for compatibility with TYPO3 v9 LTS or TYPO3 v10
+LTS.
 
 ## Installation
 
-With composer:
+With Composer:
 
     composer req brotkrueml/schema-virtuallocation
 
@@ -63,7 +63,7 @@ For more information have a look into the
 
 | Latest release | TYPO3       | PHP   | EXT:schema | Updates will contain             |
 |----------------|-------------|-------|------------|----------------------------------|
-| 2.x            | 11.5 - 12.4 | ≥ 8.1 | 3.x        | Features, security and bug fixes |
+| 2.x            | 11.5 - 13.4 | ≥ 8.1 | 3.x        | Features, security and bug fixes |
 | 1.x            | 10.4 - 12.4 | ≥ 7.2 | 1.x - 2.x  | Security and bug fixes           |
 
 [Changelog](https://github.com/brotkrueml/schema-virtuallocation/blob/main/CHANGELOG.md) |

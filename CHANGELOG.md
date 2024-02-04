@@ -7,6 +7,9 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+### Added
+- Compatibility with TYPO3 v13
+
 ## [2.0.0] - 2023-10-23
 
 ### Added
