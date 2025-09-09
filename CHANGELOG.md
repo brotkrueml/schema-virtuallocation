@@ -7,6 +7,9 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+### Changed
+- Extension is now marked as obsolete, see README.md for alternatives
+
 ## [2.1.0] - 2024-02-04
 
 ### Added

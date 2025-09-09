@@ -1,5 +1,13 @@
 # Add-on to the TYPO3 schema extension, providing VirtualLocation
 
+> This extension is now obsolete. Reason is, that the `VirtualLocation` type
+> alone is mostly not sufficient, you may need also pending properties from the
+> `Event` type. Create the class (and, if necessary, the view helper) in your
+> site package or another project-specific extension, see
+> [Adding types](https://docs.typo3.org/p/brotkrueml/schema/4.0/en-us/Developer/ExtendingVocabulary.html#adding-types). Alternatively, you can also install the
+> [schema_pending](https://extensions.typo3.org/extension/schema_pending) extension,
+> which provides the `VirtualLocation` type with many other pending types and properties.
+
 This extension is an add-on for the TYPO3
 [schema extension](https://github.com/brotkrueml/schema) and provides the
 [VirtualLocation](https://schema.org/VirtualLocation) type. It can be assigned
